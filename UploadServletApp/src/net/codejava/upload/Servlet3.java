@@ -22,7 +22,7 @@ import org.apache.commons.fileupload.servlet.ServletFileUpload;
  * A Java servlet that handles file upload from client.
  * @author www.codejava.net
  */
-public class UploadServlet extends HttpServlet {
+public class Servlet3 extends HttpServlet {
     private static final long serialVersionUID = 1L;
  
     private static final String UPLOAD_DIRECTORY = "upload";
@@ -53,10 +53,7 @@ public class UploadServlet extends HttpServlet {
         upload.setSizeMax(MAX_REQUEST_SIZE);
          
         // constructs the directory path to store upload file
-        //String uploadPath = getServletContext().getRealPath("")
-            //+ File.separator + UPLOAD_DIRECTORY;
-        String uploadPath = "/Users/JackAlvarez/Documents/School/Fall 2014/CSCI 3308/Project/UploadServletApp/UploadRepo";
-        
+        String uploadPath = "/Users/JackAlvarez/Documents/School/Fall 2014/CSCI 3308/Project/UploadServletApp/UploadRepo/3";
         // creates the directory if it does not exist
         File uploadDir = new File(uploadPath);
         if (!uploadDir.exists()) {
@@ -90,7 +87,7 @@ public class UploadServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request,
             HttpServletResponse response) throws ServletException, IOException {
         // reads input file from an absolute path
-        String filePath = "/Users/JackAlvarez/Documents/School/Bib.txt";
+        String filePath = "/Users/JackAlvarez/Documents/School/Fall 2014/CSCI 3308/Project/UploadServletApp/UploadRepo/3/Text3.txt";
         File downloadFile = new File(filePath);
         FileInputStream inStream = new FileInputStream(downloadFile);
          

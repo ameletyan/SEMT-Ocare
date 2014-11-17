@@ -6,17 +6,69 @@
         http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
     id="WebApp_ID" version="2.5">
   <display-name>UploadServletApp</display-name>
+  <welcome-file-list>
+  	<welcome-file>login.html</welcome-file>
+  </welcome-file-list>
+ 
+  <context-param>
+  	<param-name>dbURL</param-name>
+  	<param-value>jdbc:mysql://localhost/mysql_db</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>dbUser</param-name>
+  	<param-value>mysql_user</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>dbUserPwd</param-name>
+  	<param-value>mysql_pwd</param-value>
+  </context-param>
+  
+  <servlet>
+  	<description></description>
+  	<display-name>LoginServlet</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>net.codejava.upload.LoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
  
   <servlet>
     <description></description>
-    <display-name>UploadServlet</display-name>
-    <servlet-name>UploadServlet</servlet-name>
-    <servlet-class>net.codejava.upload.UploadServlet</servlet-class>
+    <display-name>Servlet1</display-name>
+    <servlet-name>Servlet1</servlet-name>
+    <servlet-class>net.codejava.upload.Servlet1</servlet-class>
   </servlet>
    
   <servlet-mapping>
-    <servlet-name>UploadServlet</servlet-name>
-    <url-pattern>/UploadServlet</url-pattern>
+    <servlet-name>Servlet1</servlet-name>
+    <url-pattern>/Servlet1</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Servlet2</display-name>
+    <servlet-name>Servlet2</servlet-name>
+    <servlet-class>net.codejava.upload.Servlet2</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+    <servlet-name>Servlet2</servlet-name>
+    <url-pattern>/Servlet2</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Servlet3</display-name>
+    <servlet-name>Servlet3</servlet-name>
+    <servlet-class>net.codejava.upload.Servlet3</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+    <servlet-name>Servlet3</servlet-name>
+    <url-pattern>/Servlet3</url-pattern>
   </servlet-mapping>
   
   <servlet>
