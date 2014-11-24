@@ -1,0 +1,5 @@
+http://www.codejava.net/java-ee/servlet/eclipse-file-upload-servlet-with-apache-common-file-upload
+
+http://www.codejava.net/java-ee/servlet/java-servlet-download-file-example
+
+http://localhost:8080/UploadServletApp/upload.jsp

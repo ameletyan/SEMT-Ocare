@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>SEMT'O Care</title>
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+    <body>
+		<font color="#FFFFFF" size="5"><center><h1>Upload a File</h1></font>
+		<font color="#FFFFFF" size="4"><h3>Use the buttons below to choose and submit a file</h3></center></font>
+		<br><br><br><br><br><br>
+        <center>
+		<form method="POST" action="upload.do">
+            <input type="file" name="upload">    
+            <input type="submit" name="submit" value="submit">
+        </form>
+        </center>
+        <br>
+        <center>
+        <form method="get" action="accounts.txt">
+			<button type="submit">Download!</button>
+		</form>
+		<br><br><br><br>
+		<!--Testing moving to a new page in the same tab-->
+		<input type="submit" onclick="func(this.form);" value="Next Page">
+		</center>
+		<script language="javascript">
+			function func(form){
+				window.location = 'target2.html'
+			}
+		</script>
+    </body>
+</html>
