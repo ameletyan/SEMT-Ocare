@@ -1,3 +1,20 @@
+/** @mainpage SEMT-OCare
+ * @authors codejava.net
+ * <hr>
+ * Modifiers: Bryan Connelly, Johnlee Alvarez
+ * <hr>
+ * @date 12/9/2014
+ * <hr>
+ * \n
+ * @section intro Java Servlets
+ *  - These Servlets are what allow Patients/Doctors to 
+ *  upload and download the records.
+ *  - We determine whether or not you are a doctor or patient based 
+ *  on your login info
+ * \n
+ * <hr>
+ */ 
+
 package net.codejava.upload;
  
 import java.io.File;
@@ -19,8 +36,11 @@ import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
  
 /**
- * A Java servlet that handles file upload from client.
+ * A Java servlet that handles file upload and download from client.
  * @author www.codejava.net
+ * <hr>
+ * Modifiers: Bryan Connelly, Johnlee Alvarez
+ * <hr>
  */
 public class Servlet1 extends HttpServlet {
     private static final long serialVersionUID = 1L;
@@ -30,8 +50,12 @@ public class Servlet1 extends HttpServlet {
     private static final int MAX_FILE_SIZE      = 1024 * 1024 * 40; // 40MB
     private static final int MAX_REQUEST_SIZE   = 1024 * 1024 * 50; // 50MB
  
-    /**
-     * handles file upload via HTTP POST method
+    /*!
+     * - This method handles file upload via HTTP POST method
+     * - The upload path is determined as a location on local disk
+     * - Allows you to select which file you want to upload
+     *   with drop-down menu
+     * @return Message stating if the upload was successful
      */
     protected void doPost(HttpServletRequest request,
             HttpServletResponse response) throws ServletException, IOException {
@@ -87,6 +111,14 @@ public class Servlet1 extends HttpServlet {
         }
         getServletContext().getRequestDispatcher("/message.jsp").forward(request, response);
     }
+    
+    /*!
+     * - This method handles file upload via HTTP GET method
+     * - Download path is set from an absolute path on Local Disk
+     * - With more time we would have implemented a drop-down menu
+     *   to select which file you wanted to download
+     * @return The file that is stored in the Download path
+     */
     protected void doGet(HttpServletRequest request,
             HttpServletResponse response) throws ServletException, IOException {
         // reads input file from an absolute path
