@@ -1,0 +1,66 @@
+\hypertarget{classnet_1_1codejava_1_1upload_1_1_servlet1}{\section{net.\+codejava.\+upload.\+Servlet1 Class Reference}
+\label{classnet_1_1codejava_1_1upload_1_1_servlet1}\index{net.\+codejava.\+upload.\+Servlet1@{net.\+codejava.\+upload.\+Servlet1}}
+}
+Inheritance diagram for net.\+codejava.\+upload.\+Servlet1\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classnet_1_1codejava_1_1upload_1_1_servlet1}
+\end{center}
+\end{figure}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classnet_1_1codejava_1_1upload_1_1_servlet1_ac163d46545f634472456bd749b91a7c9}{do\+Post} (Http\+Servlet\+Request request, Http\+Servlet\+Response response)  throws Servlet\+Exception, I\+O\+Exception 
+\item 
+void \hyperlink{classnet_1_1codejava_1_1upload_1_1_servlet1_ab38ac3551f31e1b69eabfae8cdb885f8}{do\+Get} (Http\+Servlet\+Request request, Http\+Servlet\+Response response)  throws Servlet\+Exception, I\+O\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A Java servlet that handles file upload and download from client. \begin{DoxyAuthor}{Author}
+www.\+codejava.\+net 
+
+ Modifiers\+: Bryan Connelly, Johnlee Alvarez 
+
+ 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classnet_1_1codejava_1_1upload_1_1_servlet1_ab38ac3551f31e1b69eabfae8cdb885f8}{\index{net\+::codejava\+::upload\+::\+Servlet1@{net\+::codejava\+::upload\+::\+Servlet1}!do\+Get@{do\+Get}}
+\index{do\+Get@{do\+Get}!net\+::codejava\+::upload\+::\+Servlet1@{net\+::codejava\+::upload\+::\+Servlet1}}
+\subsubsection[{do\+Get}]{\setlength{\rightskip}{0pt plus 5cm}void net.\+codejava.\+upload.\+Servlet1.\+do\+Get (
+\begin{DoxyParamCaption}
+\item[{Http\+Servlet\+Request}]{request, }
+\item[{Http\+Servlet\+Response}]{response}
+\end{DoxyParamCaption}
+) throws Servlet\+Exception, I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classnet_1_1codejava_1_1upload_1_1_servlet1_ab38ac3551f31e1b69eabfae8cdb885f8}
+
+\begin{DoxyItemize}
+\item This method handles file upload via H\+T\+T\+P G\+E\+T method
+\item Download path is set from an absolute path on Local Disk
+\item With more time we would have implemented a drop-\/down menu to select which file you wanted to download \begin{DoxyReturn}{Returns}
+The file that is stored in the Download path 
+\end{DoxyReturn}
+
+\end{DoxyItemize}\hypertarget{classnet_1_1codejava_1_1upload_1_1_servlet1_ac163d46545f634472456bd749b91a7c9}{\index{net\+::codejava\+::upload\+::\+Servlet1@{net\+::codejava\+::upload\+::\+Servlet1}!do\+Post@{do\+Post}}
+\index{do\+Post@{do\+Post}!net\+::codejava\+::upload\+::\+Servlet1@{net\+::codejava\+::upload\+::\+Servlet1}}
+\subsubsection[{do\+Post}]{\setlength{\rightskip}{0pt plus 5cm}void net.\+codejava.\+upload.\+Servlet1.\+do\+Post (
+\begin{DoxyParamCaption}
+\item[{Http\+Servlet\+Request}]{request, }
+\item[{Http\+Servlet\+Response}]{response}
+\end{DoxyParamCaption}
+) throws Servlet\+Exception, I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classnet_1_1codejava_1_1upload_1_1_servlet1_ac163d46545f634472456bd749b91a7c9}
+
+\begin{DoxyItemize}
+\item This method handles file upload via H\+T\+T\+P P\+O\+S\+T method
+\item The upload path is determined as a location on local disk
+\item Allows you to select which file you want to upload with drop-\/down menu \begin{DoxyReturn}{Returns}
+Message stating if the upload was successful 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Upload\+Servlet\+App/src/net/codejava/upload/Servlet1.\+java\end{DoxyCompactItemize}
