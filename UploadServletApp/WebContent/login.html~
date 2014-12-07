@@ -179,12 +179,12 @@
 					//if the login info is correct, open the target page
 					if(form.usermail.value == accounts[i][0] && enteredPass == accounts[i][1]){
 						if(accounts[i][2] == 1){
-							window.open('doctor.html')
+							window.open('doctor.jsp')
 					        loginfound = 1
 	                        window.close()
 						}
 						else{
-							window.open('patient.html')
+							window.open('patient.jsp')
 					        loginfound = 1
 	                        window.close()
 						}
