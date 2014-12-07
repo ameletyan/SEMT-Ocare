@@ -42,15 +42,14 @@
 			<INPUT TYPE="submit" VALUE="Create an Account">
     </form>
     <script language="javascript">
-        /**
-        *
+        /*!
         *  Secure Hash Algorithm (SHA256)
         *  http://www.webtoolkit.info/
-        *
         *  Original code by Angel Marin, Paul Johnston.
         *
-        **/
-        
+        * - Secure Hash Algorithm allows you to encrypt
+        *   the passwords for our login page
+        */
         function SHA256(s){
             
         var chrsz   = 8;
@@ -170,6 +169,14 @@
             
         }
         
+    /*!
+     * - This method checks userid and passwords
+     * - Checks a master list of usernames and passwords
+     * - Stores passwords as hash cods in array
+     * - With more time we would have implemented a database
+     *   to store the login information
+     * @return New webpage if login was successful
+     */
     function check(form){/*function to check userid & password*/
             //check master list of usernames and passwords
             //store passwords as hash code in array
