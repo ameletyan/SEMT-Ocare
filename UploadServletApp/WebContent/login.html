@@ -166,7 +166,7 @@
             //check master list of usernames and passwords
             //store passwords as hash code in array
             
-            var accounts = [["test1@test1.com", "e6c3da5b206634d7f3f3586d747ffdb36b5c675757b380c6a5fe5c570c714349", 1],["test2@test2.com", "1ba3d16e9881959f8c9a9762854f72c6e6321cdd44358a10a4e939033117eab9", 0],["test3@test3.com", "3acb59306ef6e660cf832d1d34c4fba3d88d616f0bb5c2a9e0f82d18ef6fc167", 0]]
+            var accounts = [["Bryan@test.com", "e6c3da5b206634d7f3f3586d747ffdb36b5c675757b380c6a5fe5c570c714349", 1],["Jack@test.com", "1ba3d16e9881959f8c9a9762854f72c6e6321cdd44358a10a4e939033117eab9", 0],["Artur@test.com", "3acb59306ef6e660cf832d1d34c4fba3d88d616f0bb5c2a9e0f82d18ef6fc167", 0],["Nathan@test.com", "a417b5dc3d06d15d91c6687e27fc1705ebc56b3b2d813abe03066e5643fe4e74", 0]]
             //turn entered password into hash code
             enteredPass = SHA256(form.password.value)
             var i = 0
@@ -184,9 +184,21 @@
 	                        window.close()
 						}
 						else{
-							window.open('patient.html')
-					        loginfound = 1
-	                        window.close()
+                            if(accounts[i][0] == "Jack@test.com"){ 
+							   window.open('patient1.html')
+					           loginfound = 1
+	                           window.close()
+                            }
+                            else if(accounts[i][0] == "Artur@test.com"){ 
+							   window.open('patient2.html')
+					           loginfound = 1
+	                           window.close()
+                            }
+                            else if(accounts[i][0] == "Nathan@test.com"){ 
+							   window.open('patient3.html')
+					           loginfound = 1
+	                           window.close()
+                            }
 						}
 					}
 				}
