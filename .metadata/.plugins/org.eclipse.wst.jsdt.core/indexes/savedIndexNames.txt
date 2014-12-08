@@ -1,0 +1,7 @@
+INDEX VERSION 1.3+/Users/JackAlvarez/Documents/School/Fall 2014/CSCI 3308/Project/ArtGit/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+977791564.index
+3458004749.index
+634669957.index
+1097437244.index
+2818739784.index
+6308055.index
