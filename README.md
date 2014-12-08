@@ -27,7 +27,7 @@ The project can be hosted on an Apache Tomcat server, or just navigated locally.
 - Install Eclipse IDE for Java Developers
 - Import the project into Eclipse from the folder "UploadServerApp"
 - Host the project on the Tomcat server through Eclipse
-- In a web browser, go to http://localhost:8080/UploadServletApp/login.html
+- In a web browser, go to http://localhost:8080/UploadServletApp/
 
 *Without Using a Tomcat Server*
 
